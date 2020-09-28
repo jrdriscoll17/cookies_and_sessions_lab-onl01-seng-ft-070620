@@ -3,6 +3,7 @@ class ProductsController < ApplicationController
 
   def add
     cart << params[:product]
+    @user_cart = cart
     render :index
   end
 end
